@@ -1,0 +1,32 @@
+# Fichiers générés par Visual Studio
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.user
+*.suo
+*.pdb
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+
+# Config spécifique à la machine
+*.userprefs
+*.userosscache
+*.resharper
+*.ncrunch*
+*.sdf
+*.opensdf
+
+# Dossiers spécifiques à Visual Studio
+.vs/
+TestResults/
