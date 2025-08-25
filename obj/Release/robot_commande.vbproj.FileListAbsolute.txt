@@ -1,0 +1,10 @@
+C:\temp\aa\robotcommande\obj\Release\ResolveAssemblyReference.cache
+C:\temp\aa\robotcommande\obj\Release\robot_commande.vbproj.GenerateResource.Cache
+C:\temp\aa\robotcommande\bin\Release\config.xml
+C:\temp\aa\robotcommande\bin\Release\robot_commande.exe
+C:\temp\aa\robotcommande\bin\Release\robot_commande.pdb
+C:\temp\aa\robotcommande\bin\Release\robot_commande.xml
+C:\temp\aa\robotcommande\obj\Release\robot_commande.Resources.resources
+C:\temp\aa\robotcommande\obj\Release\robot_commande.exe
+C:\temp\aa\robotcommande\obj\Release\robot_commande.xml
+C:\temp\aa\robotcommande\obj\Release\robot_commande.pdb

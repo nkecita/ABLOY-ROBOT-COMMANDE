@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+
+  <!--   SI ACTIVE=OUI ALORS LE PROGRAMME PASSE LE STATUT à 2 EN FIN DE TRAITEMENT SINON IL NE CHANGE PAS LE STATUT   -->
+  <ACTIVE>NON</ACTIVE>
+    
+  <!--   CHAINE DE CONNEXION SQL SERVEUR BASE FICHET PRINCIPALE    -->
+  <DATABASE-FICHET>provider=SQLOLEDB;server=econ.fichet-pointfort.fr,1515;Trusted_Connection=false;uid=fichet-sql;pwd=jlm556;database=FICHET_NEW;Pooling=true;Max Pool Size=500</DATABASE-FICHET>
+
+  <!--   CHAINE DE CONNEXION SQL SERVEUR BASE ECON    -->
+  <DATABASE-ECON>provider=SQLOLEDB;server=econ.fichet-pointfort.fr,1515;Trusted_Connection=false;uid=fichet-sql;pwd=jlm556;database=ECON;Pooling=true;Max Pool Size=500</DATABASE-ECON>
+
+  <!--   CHAINE DE CONNEXION SQL SERVEUR BASE ECON TEST   -->
+  <DATABASE-ECONTEST>provider=SQLOLEDB;server=econ.fichet-pointfort.fr,1515;Trusted_Connection=false;uid=fichet-sql;pwd=jlm556;database=ECON_TEST;Pooling=true;Max Pool Size=500</DATABASE-ECONTEST>
+
+  <!--   FILTRE COMMANDE     -->
+  <ORDER-FILTER>status=1 and upper(left(num_client,1))!='E' and dtcomm='22/11/2010'</ORDER-FILTER>  
+   
+  <!--   VERSION DE MODELE   -->
+  <MODELVERSION>9</MODELVERSION>
+
+  <!--   REPERTOIRE DE SORTIE   -->
+  <OUTPUT>C:\newdev\fichet\out\configuration</OUTPUT>
+
+  <!--   ADRESSE ET REPERTOIRE DU SERVEUR FTP   -->
+  <FTP-SERVER>ftp://devis.socab.fr/poissyftp/nordine/fichet/econxml</FTP-SERVER>
+
+  <!--   UTILISATEUR FTP   -->
+  <FTP-USER>administrateur</FTP-USER>
+
+  <!--   MOT DE PASSE FTP   -->
+  <FTP-PASSWORD>nfh*aout</FTP-PASSWORD>
+  
+ </CONFIG>
