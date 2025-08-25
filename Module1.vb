@@ -87,7 +87,7 @@ Module Module1
             Dim cSql As String
             Dim dsCommande As DataSet = New DataSet()
 
-            cSql = "select cde.[num_commande],cde.[status],cde.[configuration],cde.[environnement],cde.[prodid],econ.prodid as econid,cde.prodid "
+            cSql = "select cde.[num_commande],cde.[status],cde.[configuration],cde.[environnement],cde.[prodid],econ.prodid as econid,cde.prodid,cde.souche "
             cSql = cSql & "From commandes_portes cde "
             cSql = cSql & "left join econ365 econ on econ.prodid = cde.prodid "
             cSql = cSql & "Where " & configGene.orderfilter
@@ -179,7 +179,10 @@ Module Module1
                     adapterEcon.MissingSchemaAction = MissingSchemaAction.AddWithKey
                     adapterEcon.Fill(dsEcon, "list_configuration")
                     If dsEcon.Tables(0).Rows.Count = 1 Then
-                        If ecrire(dsEcon.Tables(0).Rows(0).Item(0).ToString, dsCommande.Tables(0).Rows(i).Item("num_commande").ToString) Then
+                        Dim FileCommandeName As String
+                        FileCommandeName = dsCommande.Tables(0).Rows(i).Item("souche").ToString & dsCommande.Tables(0).Rows(i).Item("num_commande").ToString
+
+                        If ecrire(dsEcon.Tables(0).Rows(0).Item(0).ToString, FileCommandeName) Then
                             If configGene.active = "OUI" Then
                                 Dim req As String = "UPDATE commandes_portes set status=2 where num_commande=" & dsCommande.Tables(0).Rows(i).Item("num_commande").ToString
                                 CreateOleDbCommand(req, configGene.databasefichet)
