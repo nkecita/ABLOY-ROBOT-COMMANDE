@@ -38,7 +38,7 @@ Module Module1
         Try
 
             ' premier commit
-
+            ' deuxième commit
             ' Lecture du fichier de configuration XML
             Dim i As Integer
             Dim startupPath As String
